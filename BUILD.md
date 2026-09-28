@@ -737,6 +737,7 @@ Bảng tra nhanh — đây là những thứ đã thực sự làm mất thời 
 | Deploy vào thư mục con thì vỡ ảnh | `base` mặc định là `/` | `base: './'` trong `vite.config.ts` |
 | Truy cập qua tunnel bị "Blocked request" | Vite chặn Host header lạ | `allowedHosts: ['.trycloudflare.com']` |
 | Ký tự lạ ở đầu tiêu đề commit | `Set-Content -Encoding UTF8` của PS 5.1 ghi kèm BOM | Dùng `[System.IO.File]::WriteAllText` với `UTF8Encoding($false)` |
+| Dev server tự tắt giữa chừng, log báo `EBUSY ... syscall: 'watch'` | Editor lưu file kiểu ghi-ra-file-tạm-rồi-đổi-tên; chokidar gặp `EBUSY` và lỗi này không được bắt nên giết cả tiến trình Node | Thêm `server.watch.ignored: ['**/*.tmp', '**/.*.tmpdir', '**/.*.tmpdir/**']`. **Phải có dấu chấm đầu pattern** vì tên thư mục tạm bắt đầu bằng `.`, mà `*` của picomatch không khớp dotfile |
 | Thanh tua kéo không được | Lớp fill phủ lên input | `pointer-events: none` trên lớp fill |
 
 ---
