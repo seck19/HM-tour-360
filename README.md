@@ -4,6 +4,8 @@ Tour tham quan 360° cho khu di tích quốc gia đặc biệt **Đền Hát Mô
 
 Web app tĩnh, thuần frontend: React + TypeScript + Vite + Photo Sphere Viewer.
 
+> **Muốn tự dựng một tour tương tự cho địa điểm khác?** Xem [`BUILD.md`](BUILD.md) — kiến trúc tổng quan và hướng dẫn implement từng phần, kèm các bẫy đã gặp.
+
 ![Giao diện desktop](preview/desktop.png)
 
 ---
