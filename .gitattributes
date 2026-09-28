@@ -1,0 +1,18 @@
+# Chuẩn hóa line-ending để clone trên Windows/macOS/Linux cho ra kết quả giống nhau.
+* text=auto
+
+# Script PowerShell chạy trên Windows nên giữ CRLF.
+*.ps1 text eol=crlf
+
+# Ảnh và audio là dữ liệu nhị phân, git không được đụng vào.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.mp3 binary
+*.wav binary
+
+# Ảnh chụp giao diện không cần diff.
+preview/*.png binary

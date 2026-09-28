@@ -1,0 +1,31 @@
+{
+  "name": "hat-mon-360-tour-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit -p tsconfig.app.json && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "crawl": "node --use-system-ca scripts/crawl-hat-mon-images.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@photo-sphere-viewer/autorotate-plugin": "5.15.1",
+    "@photo-sphere-viewer/core": "5.15.1",
+    "@photo-sphere-viewer/virtual-tour-plugin": "5.15.1",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "5.9.3",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}

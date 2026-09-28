@@ -1,0 +1,32 @@
+# Phụ thuộc & build
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.tsbuildinfo
+
+# Kiểm thử
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Log tiến trình nền
+*.log
+.devserver.log
+.tunnel.log
+.preview.log
+
+# Ảnh gốc & tư liệu KHÔNG dùng trong tour (xem README mục "Nguồn tư liệu").
+# Tour chỉ cần public/panoramas/hat-mon + public/audio, hai thư mục này đã commit sẵn.
+audio và ảnh hai bà trưng/
+public/reference/
+public/panoramas/ai/
+
+# Môi trường & hệ điều hành
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
+desktop.ini
